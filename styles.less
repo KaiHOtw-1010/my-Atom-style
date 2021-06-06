@@ -1,0 +1,64 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+
+
+/*
+ * Examples
+ * (To see them, uncomment and save)
+ */
+
+// style the background color of the tree view
+.tree-view {
+  // background-color: whitesmoke;
+}
+
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+  // color: orange;
+  background-color: hsl(180, 24%, 12%);
+}
+
+// style UI elements inside atom-text-editor
+atom-text-editor .cursor {
+  border-color: #D6CE09;
+}
+
+
+// style general variables
+atom-text-editor::shadow .syntax--js {
+  // color: #F76DAF;
+  color: LightPink;
+}
+
+
+// ------------style to overwrite .syntax--js------------
+atom-text-editor::shadow .syntax--period {
+  color: #abb2bf;
+}
+
+atom-text-editor::shadow .syntax--curly {
+  // color: Bisque;
+  // color: #abb2bf;
+  color: LavenderBlush;
+}
+
+atom-text-editor::shadow .syntax--semicolon {
+  color: #abb2bf;
+}
+//-------------------------------------------------------
+
+// ^how to write in LESS nested structure?
+
+// style function names
+atom-text-editor::shadow .syntax--entity.syntax--name.syntax--function {
+  // color: LightSkyBlue;
+  color: DeepSkyBlue;
+}
