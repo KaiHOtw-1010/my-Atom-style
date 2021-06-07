@@ -49,6 +49,12 @@ atom-text-editor::shadow .syntax--curly {
 atom-text-editor::shadow .syntax--semicolon {
   color: #abb2bf;
 }
+
+// operators like +-*/=%,
+// note e.g. 'new' operator has a class .syntax--new
+atom-text-editor::shadow .syntax--js.syntax--operator {
+  color: #AED6F1;
+}
 //-------------------------------------------------------
 
 // ^how to write in LESS nested structure?
